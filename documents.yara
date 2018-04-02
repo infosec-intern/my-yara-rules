@@ -1,3 +1,7 @@
+/*
+    This rule file is all about common office document formats -
+        including older binary Office formats, newer xml-based Office formats, and PDFs
+*/
 private rule MSOffice : Office
 {
     meta:

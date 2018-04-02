@@ -1,3 +1,6 @@
+/*
+    This rule file is all about archive files - Zips, RAR, Gzip, Bzip, Tar, etc.
+*/
 rule Zip
 {
     meta:
