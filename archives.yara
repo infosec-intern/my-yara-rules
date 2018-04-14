@@ -12,5 +12,5 @@ rule Zip
         $empty = { 05 06 }
         $span = { 07 08 }
     condition:
-        uint32be(0) == 0x504B and any of them
+        uint16be(0) == 0x504B and any of them at 2
 }
