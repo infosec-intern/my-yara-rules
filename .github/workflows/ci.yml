@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  major_test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+    - uses: infosec-intern/setup-yara@master
+      # with:
+        # yara-version: "3"
+        # rules: "pe_stuff.yara"
