@@ -8,6 +8,7 @@ jobs:
       with:
         fetch-depth: 1
     - uses: infosec-intern/setup-yara@master
-      # with:
-        # yara-version: "3"
-        # rules: "pe_stuff.yara"
+      with:
+        yara-version: "3"
+        rules: "pe.yara"
+        flags: "--print-meta"
