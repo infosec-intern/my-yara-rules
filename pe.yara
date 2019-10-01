@@ -19,3 +19,11 @@ rule DLL : PE Library
     condition:
         PE and pe.is_dll()
 }
+rule Exe : PE Executable
+{
+    meta:
+        author = "Thomas Gardner"
+        description = "Describes an executable file"
+    condition:
+        PE and pe.characteristics & pe.EXECUTABLE_IMAGE
+}
