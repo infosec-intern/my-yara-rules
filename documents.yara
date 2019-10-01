@@ -2,7 +2,7 @@
     This rule file is all about common office document formats -
         including older binary Office formats, newer xml-based Office formats, and PDFs
 */
-private rule Office_97_2003 : Office
+rule Office_97_2003 : Office
 {
     meta:
         author = "Thomas Gardner"
@@ -11,7 +11,7 @@ private rule Office_97_2003 : Office
     condition:
         uint32be(0) == 0xD0CF11E0
 }
-private rule Office_2007 : Office
+rule Office_2007 : Office
 {
     meta:
         author = "Thomas Gardner"
